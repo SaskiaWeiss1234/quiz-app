@@ -1,0 +1,18 @@
+.navigation-bar {
+    box-sizing: border-box;
+    border: 4px lightgray;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    background-color: darkgray;
+    align-items: center;
+}
+
+
+        
+
+    

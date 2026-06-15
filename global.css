@@ -1,0 +1,44 @@
+
+
+
+
+
+
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding 0;
+    padding-bottom: 70px;
+
+
+}
+header { 
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+screen and (min-width: 600px) {
+    root: --font-size: 12px;
+}

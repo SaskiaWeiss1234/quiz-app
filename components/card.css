@@ -1,0 +1,28 @@
+.question-card {
+    position: relative;
+    border: 2px solid black;
+    background-color: aqua;
+    display: grid
+    gap: 20px
+    grid-template-columns: 1fr 4fr 1fr
+    height: 100vh;
+    
+
+
+
+
+
+
+}
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 10px;
+    list-style: none;
+    padding: 0;
+
+    
+    
+
+    
+}
