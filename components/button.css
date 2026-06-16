@@ -2,7 +2,13 @@
     display: block;
     margin: 0 auto 20px auto;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid goldenrod;
     border-radius: 5px;
-    background-color: white;
+    background-color: #ae0000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: goldenrod;
+
+
+
 }
