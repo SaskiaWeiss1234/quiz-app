@@ -10,11 +10,17 @@ header {
     position: sticky;
     text-align: center;
     padding: auto;
-    border: 15px #946B2D;
+    border: 20px #946B2D;
     border-style: inset;
     margin-bottom: 20px;
     background-color: #0E1A40;
     color: #946B2D;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
 
 
 

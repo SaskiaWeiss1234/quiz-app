@@ -11,12 +11,14 @@
     justify-content: space-around;
     background-color: #e5e4e2;
     align-items: center;
+    max-width: 600px;
+    margin: auto;
     
 }
 .tag {
     text-decoration: none;
     color: black;
-    
+
 
 }
 
