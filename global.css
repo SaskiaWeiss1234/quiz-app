@@ -1,11 +1,12 @@
 * ::before, ::after {
     box-sizing: border-box;
     margin: 0px;
+}
 .title-of-the-page {
     margin: 1px;
     padding: 0;
 }
-}
+
 header { 
     position: sticky;
     text-align: center;
