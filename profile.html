@@ -4,94 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="global.css">
+    <script src="js/profile.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <header class="profile-page-title">Profile Page</header>
-   
-        <section class="profile-cards" aria-label="profile-cards">
-                <h2 class="profile-card_Name"> Saskia Weiß</h2>
-                <p class="about-me_Container"> 
-                    As a Potterhead of the first generation, I could answer every single one of these questions in my sleep. 
-                    But I won't, as who wants to be an insufferable know-it-all... Can you guess which of the characters represents me best?
-                </p>
-                <ul class="information-icon">
-                    <li class="information-bar_number_of_questions">12</li>
-                    <li class="inforamtion-bar_number_of_bookmarks">4</li>
-                </ul>
-                <h2 class="Settings">Settings</h2>
-                <Button class="darkmode-switch">
-                    <input type="checkbox">
+    <header class="profile-page-title" >Profile Page</header>
+    <main>
+   <section class="profile-card" aria-label="profile-card">
+                <div class="profile">
+                    <div class="profile-picture">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xml:space="preserve" width="40" height="40"><path style="fill:#8a5fc4" d="M40 31.063c0 1.905-8.952 3.492-20 3.492S0 33.032 0 31.063s8.952-.762 20-.762 20-1.143 20 .762"/><path style="fill:#704d96" d="M20 30.302c11.048 0 20-1.143 20 .762s-8.952 3.492-20 3.492"/><path style="fill:#8a5fc4" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175c-1.143-1.143-1.778-1.143-2.921 0l-5.904 21.841c2.286.063 4.762.127 7.365.127"/><path style="fill:#704d96" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175M4 33.159c3.111.698 9.46 1.524 16 1.524s12.317-.635 15.937-1.46z"/><path style="fill:#fcc03a" d="m20 19.508.825 1.714 1.905.254-1.333 1.334.317 1.904L20 23.825l-1.714.889.317-1.904-1.333-1.334 1.905-.254Z"/></svg>
+                        </div>
+                        <h2 class=profile-heading>Max Mustermann</h2>
+                    </div>
+                    <div class="aboutMe-Section">
+                        <h3>About Me</h3>
+                        <p>As a Potterhead of the first generation, I could answer every single one of these questions in my sleep. 
+                    But I won't, as who wants to be an insufferable know-it-all... Can you guess which of the characters represents me best?</p>
+                </div>
+         <div class="profile-counters">
+             <span class="profile-counters-container">
+                <img class="profile-counters-questionmark" src="./assets/circle-question-mark.png" alt="answered questions:">
+                <span>
+                    10
+                </span>
+    </span>
+        <span class="profile-counters-container">
+            <img class="profile-counters-image-wand" src="./assets/wand-sparkles.png" alt="bookmarked questions">
+            <span>
+                3
+            </span>
+        </span>
+     </div>
+  
+    <section class="Settings-Container">
+        <div class="profile-settings">
+            <h3>Settings</h3>
+            <div class="darkmode">
+                <h4 class="dark-mode-label">Dark Mode</h4>
+
+<label class="switch" data-js="darkmode-switch">
+                    <input data-js="darkmode-checkbox" type="checkbox">
                     <span class="slider round"></span>
-                </Button>
-                </h2>
-            </section>
+                </label>
+                </div>
+         </section>
+            <form hidden class="Profile-Card-submit" data-js="Profile-Card-Submit">
+                <fieldset>
+                    <legend>Create your personal Profile</legend>
+                    <label for="first name">Your First Name</label>
+                    <input
+                    type="text"
+                    name="firstName"
+                    id="first-name"
+                    placeholder="Your first name"
+                    />
+                    <label for="last name">Your Last Name</label>
+                    <input
+                    type="text"
+                    name="firstName"
+                    id="first-name"
+                    placeholder="Your last name"
+                    />
+                    <label for="age">Your Age</label>
+                    <input
+                    type="number"
+                    name="age" id="age" placeholder="Your age" max="200"
+                    />
+                    <label for="message">About me</label>
+                    <textarea
+                    name="aboutMe"
+                    id="aboutMe"
+                    rows="10"
+                    cols="50"
+                    placeholder="Tell something about yourself"
+                    ></textarea>
+                    <button type="submit">Complete your profile!</button>
+                
+</fieldset>
+        </form>
             </main>
-                <footer class="navigation-bar">
-<svg width="35px" height="35px" viewBox="0 0 2.1 2.1" version="1" xmlns="http://www.w3.org/2000/svg" 
-enable-background="new 0 0 48 48"><path fill="#E8EAF6" points="42,39 6,39 6,23 24,6 42,23" 
-d="M1.837 1.706L0.262 1.706L0.262 1.006L1.05 0.262L1.837 1.006Z"/><g fill="#C5CAE9"><path 
-    points="39,21 34,16 34,9 39,9" d="M1.706 0.919L1.487 0.7L1.487 0.394L1.706 0.394Z"/><path x="6" y="39" width="36" height="5" d="M0.262 1.706H1.837V1.925H0.262V1.706z"/></g><path fill="#B71C1C" points="24,4.3 4,22.9 6,25.1 24,8.4 42,25.1 44,22.9" d="M1.05 0.188L0.175 1.002L0.262 1.098L1.05 0.367L1.837 1.098L1.925 1.002Z"/><path x="18" y="28" fill="#D84315" width="12" height="16" d="M0.787 1.225H1.313V1.925H0.787V1.225z"/><path x="21" y="17" fill="#01579B" width="6" height="6" d="M0.919 0.744H1.181V1.006H0.919V0.744z"/><path fill="#FF8A65" d="M1.203 1.553c-0.013 0 -0.022 0.009 -0.022 0.022v0.087c0 0.013 0.009 0.022 0.022 0.022s0.022 -0.009 0.022 -0.022v-0.087c0 -0.013 -0.009 -0.022 -0.022 -0.022"/></svg>
- <svg width="40px" height="40px" viewBox="0 0 6.4 6.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet">
-  <path d="M1.24 1.976c-0.328 -0.077 -0.626 -0.272 -0.825 -0.546l-0.053 -0.072c-0.036 -0.05 -0.025 -0.12 0.025 -0.156l0.145 -0.105c0.05 -0.036 0.12 -0.025 0.156 0.025l0.053 0.072c0.172 0.237 0.448 0.391 0.739 0.413l0.201 0.015 -0.031 0.401 -0.201 -0.015c-0.07 -0.006 -0.14 -0.016 -0.209 -0.033" fill="#874d36"/>
-  <path d="M1.24 1.976c-0.328 -0.077 -0.626 -0.272 -0.825 -0.546l-0.053 -0.072c-0.036 -0.05 -0.025 -0.12 0.025 -0.156l0.145 -0.105c0.05 -0.036 0.12 -0.025 0.156 0.025l0.053 0.072c0.172 0.237 0.448 0.391 0.739 0.413l0.201 0.015 -0.031 0.401 -0.201 -0.015c-0.07 -0.006 -0.14 -0.016 -0.209 -0.033" fill="#874d36"/>
-  <path d="M0.533 1.096c-0.043 0.031 -0.064 0.046 -0.115 0.083 -0.063 0.046 0.118 0.29 0.307 0.422 0.072 0.051 0.283 0.08 0.314 -0.046 0.007 -0.029 -0.003 -0.06 -0.02 -0.086 -0.029 -0.042 -0.076 -0.07 -0.115 -0.102 -0.061 -0.052 -0.116 -0.11 -0.163 -0.175l-0.053 -0.072c-0.036 -0.05 -0.106 -0.061 -0.156 -0.025" fill="#de7340"/>
-  <path d="M1.265 1.566c0.066 0.098 0.104 0.271 0.103 0.389l0.165 -0.144c-0.038 -0.174 -0.067 -0.208 -0.067 -0.208 -0.079 -0.006 -0.201 -0.038 -0.201 -0.038" fill="#4e342e"/>
-  <path d="m1.591 2.232 -0.025 -0.2a2.075 2.075 0 0 0 -0.861 -1.438l-0.066 -0.047a0.12 0.12 0 0 1 -0.028 -0.168l0.094 -0.132a0.121 0.121 0 0 1 0.168 -0.029l0.066 0.047a2.48 2.48 0 0 1 1.028 1.716l0.025 0.2z" fill="#874d36"/>
-  <path d="m1.591 2.232 -0.025 -0.2a2.075 2.075 0 0 0 -0.861 -1.438l-0.066 -0.047a0.12 0.12 0 0 1 -0.028 -0.168l0.094 -0.132a0.121 0.121 0 0 1 0.168 -0.029l0.066 0.047a2.48 2.48 0 0 1 1.028 1.716l0.025 0.2z" fill="#874d36"/>
-  <path d="M0.969 2.594s1.085 2.604 3.827 3.522c0.112 0.038 0.221 -0.065 0.194 -0.179l-0.282 -1.155c-0.011 -0.044 0.02 -0.086 0.065 -0.091 0.486 -0.046 0.897 -0.137 1.163 -0.208 0.126 -0.033 0.153 -0.199 0.046 -0.271 -2.017 -1.338 -3.155 -3.131 -3.155 -3.131a0.257 0.257 0 0 0 -0.361 -0.037L1.006 2.233c-0.154 0.121 -0.037 0.361 -0.037 0.361m1.024 -0.196c-0.098 -0.121 -0.08 -0.298 0.041 -0.396s0.298 -0.08 0.396 0.041a0.281 0.281 0 0 1 -0.041 0.396 0.281 0.281 0 0 1 -0.396 -0.041" fill="#f44336"/>
-  <path d="M1.982 2.206c-0.015 0.003 -0.031 0.003 -0.046 -0.003 -0.055 -0.018 -0.052 -0.092 -0.074 -0.137 -0.027 -0.054 -0.063 -0.101 -0.105 -0.144 -0.045 -0.046 -0.097 -0.091 -0.16 -0.11 -0.029 -0.009 -0.057 -0.007 -0.085 0.004 0.007 -0.027 -0.002 -0.055 0.005 -0.083 0.016 -0.07 0.069 -0.137 0.127 -0.178 0.045 -0.033 0.094 -0.064 0.148 -0.079 0.058 -0.016 0.1 -0.001 0.153 0.025 0.095 0.047 0.176 0.119 0.236 0.207 0.081 0.12 0.133 0.252 0.017 0.365 -0.048 0.047 -0.104 0.086 -0.165 0.115 -0.017 0.007 -0.035 0.014 -0.053 0.017" fill="#874d36"/>
-  <path d="M1.776 1.537c0.06 -0.022 0.137 -0.011 0.186 0.01 0.024 0.01 0.073 0.056 0.074 0.091 0 0.053 -0.047 0.094 -0.105 0.134 -0.052 0.04 -0.102 0.055 -0.161 0.02 -0.052 -0.028 -0.184 -0.052 -0.171 -0.097 0.02 -0.069 0.112 -0.135 0.176 -0.158" fill="#de7340"/>
-  <path d="M0.59 0.471s0.014 -0.042 0.052 -0.048S0.888 0.54 1.09 0.75c0.135 0.14 0.378 0.5 0.418 0.521 0.028 0.015 0.064 0.023 0.093 0.009 0.045 -0.022 0.053 -0.082 0.047 -0.132 -0.024 -0.19 -0.138 -0.33 -0.259 -0.472a2.48 2.48 0 0 0 -0.451 -0.412l-0.066 -0.047c-0.055 -0.039 -0.114 -0.044 -0.169 0.018 -0.001 0.001 -0.142 0.16 -0.114 0.234" fill="#de7340"/>
-  <path fill="#fcebcd" d="m3.272 3.424 0.354 0.162 0.334 -0.2 -0.045 0.387 0.294 0.256 -0.382 0.078 -0.152 0.358 -0.192 -0.339 -0.388 -0.034 0.264 -0.287z"/>
-  <path fill="#fcebcd" d="m3.272 3.424 0.354 0.162 0.334 -0.2 -0.045 0.387 0.294 0.256 -0.382 0.078 -0.152 0.358 -0.192 -0.339 -0.388 -0.034 0.264 -0.287z"/>
-</svg>
-<svg width="35px" height="35px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.701 1.206a0.322 0.322 0 0 0 -0.322 -0.321 0.322 0.322 0 0 0 -0.321 0.321 0.322 0.322 0 0 0 0.321 0.322 0.322 0.322 0 0 0 0.322 -0.322" fill="#FF5F00"/>
-  <path d="M1.417 1.703h-0.076a0.539 0.539 0 0 0 -0.539 0.539v0.279H1.956v-0.279a0.539 0.539 0 0 0 -0.539 -0.539" fill="#FF5F00"/>
-  <path d="M2.254 0.245h-1.75a0.262 0.262 0 0 0 -0.262 0.262v1.75a0.262 0.262 0 0 0 0.262 0.262h0.123v-0.279a0.714 0.714 0 0 1 0.432 -0.656 0.494 0.494 0 0 1 -0.177 -0.379 0.497 0.497 0 0 1 0.496 -0.496 0.497 0.497 0 0 1 0.497 0.496 0.494 0.494 0 0 1 -0.177 0.379 0.715 0.715 0 0 1 0.432 0.656v0.279h0.123a0.262 0.262 0 0 0 0.262 -0.262v-1.75a0.262 0.262 0 0 0 -0.262 -0.262" fill="#e5e4e2"/>
-</svg>
+      <footer class="navigation-bar">
+    <a href="index.html"><svg width="40" height="40" viewBox="0 0 0.85 0.85" 
+    xmlns="http://www.w3.org/2000/svg" 
+    class="si-glyph si-glyph-castle"><title>181</title><path 
+    d="M.8.25H.75V.3H.7V.251L.65.25v.2h-.1V.2A.05.05 0 0 0 .6.151S.428.002.4.002H.399c-.027 0-.2.149-.2.149C.199.178.224.2.251.2v.25H.149V.3S.126.303.1.301V.35H.05V.3H0v.448c0 .028.024.05.052.05H.35V.653C.35.582.402.597.402.597S.454.582.454.653v.145H.75C.778.798.8.774.8.744zM.05.5V.45H.1V.5zm.1.15H.1V.6h.05zm.1 0H.2V.6h.05zm.2-.3H.348V.247H.45zm.15.3H.55V.6H.6zm.1 0H.65V.6H.7zM.75.5H.699V.45H.75z" 
+    fill="white" 
+    class="si-glyph-fill" 
+    fill-rule="evenodd"/>
+</svg></a> 
+<a href="bookmark.html"><svg class="bookmark-icon-footer" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#43270F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+</a>      
+<a href="form.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+</a>
+<a href="profile.html"><svg width="40px" height="40px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.701 1.206a0.322 0.322 0 0 0 -0.322 -0.321 0.322 0.322 0 0 0 -0.321 0.321 0.322 0.322 0 0 0 0.321 0.322 0.322 0.322 0 0 0 0.322 -0.322" fill="white"/>
+  <path d="M1.417 1.703h-0.076a0.539 0.539 0 0 0 -0.539 0.539v0.279H1.956v-0.279a0.539 0.539 0 0 0 -0.539 -0.539" fill="white"/>
+  <path d="M2.254 0.245h-1.75a0.262 0.262 0 0 0 -0.262 0.262v1.75a0.262 0.262 0 0 0 0.262 0.262h0.123v-0.279a0.714 0.714 0 0 1 0.432 -0.656 0.494 0.494 0 0 1 -0.177 -0.379 0.497 0.497 0 0 1 0.496 -0.496 0.497 0.497 0 0 1 0.497 0.496 0.494 0.494 0 0 1 -0.177 0.379 0.715 0.715 0 0 1 0.432 0.656v0.279h0.123a0.262 0.262 0 0 0 0.262 -0.262v-1.75a0.262 0.262 0 0 0 -0.262 -0.262" fill="rgba(4,39,48, 0.8)"/>
+</svg></a>   
 
-
-
-
-
-
-</footer>
-
-      
-
-            
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-         
-
-    
+</footer>     
 </body>
 </html>

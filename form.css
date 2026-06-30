@@ -1,0 +1,214 @@
+
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(220,221,216);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/background-image_normal_mode.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    
+   
+}
+main {
+    display:  flex;
+    flex-direction: column;
+}
+.question-card-container {
+    width: 400px;
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(4,39,48);
+    border-radius: 3px;
+    border: 1px solid rgba(4,39,48);
+    gap: 20px;
+
+
+
+}
+#yourQuestion {
+    background-color: rgba(25,71,69);
+    border: 2px solid rgba(25,71,69);
+    border-radius: 3px;
+     resize: none;
+     text-align: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 12px;
+
+}
+#yourAnswer {
+    background-color: rgba(25,71,69);
+    border: 2px solid rgba(25,71,69);
+    border-radius: 3px;
+    resize: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 12px;
+}
+.YourQuestion {
+    background-color: rgba(25,71,69); 
+    border-radius: 3px;
+    border: 3px solid rgba(25,71,69);
+
+}
+#tag {
+    background-color: rgba(25,71,69); 
+    border-radius: 3px;
+    border: 3px solid rgba(25,71,69);
+    
+}
+.remaining-chars-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+}
+.Question-Card-submit {
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: rgba(25,71,69);
+    border: 4px solid rgba(4,39,48, 0.5);
+}
+button:hover {
+    animation: enlarge 2s ease-in-out;
+    transition
+
+}
+@keyframes enlarge {
+    0% {
+        opacity: 0.4;
+        
+    }
+    50% {
+        opacity: 1;
+       
+    }
+    100% {
+        opacity: 0.4;
+        
+    }
+    }
+    .question-card_question {
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 320px;
+    
+
+}
+.question-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 55px;
+}
+.question-card {
+    position: relative;
+    background-color: rgba(4,39,48);
+    border-radius: 3px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin: auto;
+}
+.question-card_answer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    align-self: center;
+}
+.tag:hover { opacity: 0.3}
+.tags .tag {
+     background-color: rgba(25,71,69, 0.5);
+    border: 3px rgba(25,71,69, 0.5);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    color: rgba(220,221,216);
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
+}
+.tags {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    
+}
+.bookmark-icon.active {
+        stroke: #FFC30B !important;
+    }
+
+.title-of-the-card {
+    border: 200px;
+    display: flex;
+    justify-content: center;
+    height: 200%;
+
+}
+.bookmark-icon {
+    fill: none;
+    stroke-width: 2;
+    stroke: #000000;
+}
+     .bookmark-icon:hover {
+        stroke: #FFC30B !important;
+    }
+    
+  
+.bookmark {
+    margin: auto ;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px #946B2D;
+    background: transparent;
+    color: #0E1A40;
+}
+    .navigation-bar {
+    box-sizing: border-box;
+    border: 4px lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    background-color: rgba(4,39,48, 0.8);
+    align-items: center;
+    margin: auto;
+    padding-top: 5px;
+    }
+.tag {
+    text-decoration: none;
+    color: black;
+}
+.bookmark-icon-footer {
+    fill: none;
+    stroke-width: 2;
+    stroke: #ffffff;
+}
+.bookmark-icon-footer:hover {
+        stroke: #FFC30B !important;
+    }     

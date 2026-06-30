@@ -1,39 +1,80 @@
+.question-card_question {
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 320px;
+    
+
+}
 .question-cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex: 1;
     gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 55px;
 }
 .question-card {
     position: relative;
-    border: 2px solid black;
-    background-color: #033807;
-    border: 17px solid silver;
-    border-radius: 2px;
-    max-width: 500px;
+    background-color: rgba(4,39,48);
+    border-radius: 3px;
+    width: 400px;
     padding: 10px;
-    margin: auto;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
     margin: auto;
+}
+.question-card_answer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    align-self: center;
+}
+.tag:hover { opacity: 0.3}
+.tags .tag {
+     background-color: rgba(25,71,69, 0.5);
+    border: 3px rgba(25,71,69, 0.5);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    color: rgba(220,221,216);
+    text-align: center;
+    font-weight: normal;
+    font-size: 22px;
 }
 .tags {
     display: flex;
     justify-content: flex-start;
-    row-gap: 10px;
     list-style: none;
     padding: 0;
-    gap: 10px;
+    
 }
+.bookmark-icon.active {
+        stroke: #FFC30B !important;
+    }
+
 .title-of-the-card {
     border: 200px;
-    background-color: #033807 ;
     display: flex;
     justify-content: center;
     height: 200%;
 
 }
+.bookmark-icon {
+    fill: none;
+    stroke-width: 2;
+    stroke: #000000;
+}
+     .bookmark-icon:hover {
+        stroke: #FFC30B !important;
+    }
+    
+  
 .bookmark {
     margin: auto ;
     position: absolute;
@@ -42,6 +83,4 @@
     border: 2px #946B2D;
     background: transparent;
     color: #0E1A40;
-
-
 }
