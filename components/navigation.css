@@ -8,7 +8,7 @@
     display: flex;
     align-self: center;
     justify-content: space-around;
-    background-color: rgba(4,39,48, 0.8);
+    background-color: var(--primary-color);
     align-items: center;
     margin: auto;
     padding-top: 5px;
@@ -20,10 +20,35 @@
 .bookmark-icon-footer {
     fill: none;
     stroke-width: 2;
-    stroke: #ffffff;
+    stroke: var(--text-color);
+    transition: 1s ease;
+}
+
+.home-icon-footer:hover {
+    animation: enlarge 3s ease-in-out;
+}
+.add-icon-footer:hover {
+    animation: enlarge 3s ease-in-out;
+}
+.profile-icon-footer:hover {
+    animation: enlarge 3s ease-in-out;
 }
 .bookmark-icon-footer:hover {
         stroke: #FFC30B !important;
     }        
 
     
+@keyframes enlarge {
+    0% {
+        transform: scale(0.8);
+        
+    }
+    50% {
+        transform: scale(1.2);
+       
+    }
+    100% {
+        transform: scale(0.8);
+        
+    }
+    }

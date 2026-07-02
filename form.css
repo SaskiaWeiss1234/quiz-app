@@ -31,6 +31,7 @@ main {
     border-radius: 3px;
     border: 1px solid rgba(4,39,48);
     gap: 20px;
+    max-height: 500px;
 
 
 

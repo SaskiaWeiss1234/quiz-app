@@ -5,29 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="./js/index.js" defer></script>
-    <title>Favorite Questions</title>
+    <title>Favorites</title>
 </head>
 <body>
 <header>
-    
-
-    <h1 class="title-of-the-page">Favorite Questions</h1>
-    
-</header>
+    <h1 class="title-of-the-page">My Favorite Questions</h1>
+    </header>
 <section class="question-cards" aria-label="question-cards">
-   <div class="question-card"> 
-    <h2 class="title-of-the-card">
+   <div class="question-card">
+     <h2 class="title-of-the-card">
         1. Question</h2>
     <h3 class="question-card_question">
      What is the name of the school that Harry Potter attends?
     </h3>
-    <button class="bookmark" data-js="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    </button>
-</button>
-    <p hidden class="question-card_answer">
-        Hogwarts
+    <button type="button" class="bookmark" data-js="bookmark">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
+    <p hidden class="question-card_answer" data-js="question-card-answer"> 
+      Hogwarts
     </p>
-    <button class="Show-Answer" data-js="Show-Answer">
+    <button type="button" class="Show-Answer" data-js="Show-Answer">
         Show Answer
     </button>
     <p class="tags">
@@ -42,8 +39,9 @@
     <h3 class="question-card_question">
      Who is Harry Potter's best friend throughout the series?
     </h3>
-    <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    </button>
+    <button type="button" class="bookmark" data-js="bookmark">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
     <p hidden class="question-card_answer">
         Ronald Weasley
     </p>
@@ -63,7 +61,8 @@
      What is the name of the lightning bolt-shaped scar on Harry Potter's forehead?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    </button>
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
     <p hidden class="question-card_answer">
         The Dark Mark
     </p>
@@ -83,8 +82,8 @@
      Which magical creature guards the entrance to the Gryffindor common room?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    </button>
-    <p hidden class="question-card_answer">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button><p hidden class="question-card_answer">
         The Fat Lady (Portrait)
     </p>
     <button class="Show-Answer">
@@ -103,9 +102,12 @@
      What is the name of the game played on flying broomsticks in the wizarding world?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    <p hidden class="question-card_answer">
-        Quiddtich
-    </p>
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+        </button>
+        <p hidden class="question-card_answer">
+            Quidditch
+        </p>
+    </button>
     <button class="Show-Answer">
         Show Answer
     </button>
@@ -122,7 +124,8 @@
      What is the name of the three-headed dog that guards the Sorcerer's Stone?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    <p hidden class="question-card_answer">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+       </button><p hidden class="question-card_answer">
         Fluffy
     </p>
     <button class="Show-Answer">
@@ -141,7 +144,9 @@
      Which professor is the head of Slytherin House at Hogwarts?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    <p hidden class="question-card_answer">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
+    <p hidden class="question-card_answer">
         Severus Snape
     </p>
     <button class="Show-Answer">
@@ -160,8 +165,10 @@
      What is the name of the dark wizard who killed Harry Potter's parents and tried to kill him as a baby?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    <p hidden class="question-card_answer">
-        Lord Voldmort (Tom Riddle)
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+      </button>
+    <p hidden class="question-card_answer">
+    Lord Voldmort (Tom Riddle)
     </p>
     <button class="Show-Answer">
         Show Answer
@@ -174,12 +181,14 @@
 </div>
 <div class="question-card"> 
     <h2 class="title-of-the-card">
-        8. Question</h2>
+        9. Question</h2>
     <h3 class="question-card_question">
      What is the name of the dark wizard who killed Harry Potter's parents and tried to kill him as a baby?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    <p hidden class="question-card_answer">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
+    <p hidden class="question-card_answer">
         Lord Voldmort (Tom Riddle)
     </p>
     <button class="Show-Answer">
@@ -198,7 +207,8 @@
      What magical object allows the Marauders to create a map of Hogwarts that shows its layout and the location of people within it?
     </h3>
     <button class="bookmark">
-<svg width="40" height="40" viewBox="0 0 0.8 0.8" xmlns="http://www.w3.org/2000/svg"><path d="M.219.25h.05V.2h.05V.15h-.05V.1h-.05v.05h-.05V.2h.05zm.4.2h-.05V.5h-.05v.05h.05V.6h.05V.55h.05V.5h-.05zM.7.1V.05H.65V.1H.6v.05h.05V.2H.7V.15h.05V.1zM.553.222a.074.074 0 0 0-.106 0L.072.597a.074.074 0 0 0 0 .106.075.075 0 0 0 .106 0L.553.328a.075.075 0 0 0 0-.106m-.41.445c-.01.01-.026.01-.035 0s-.01-.026 0-.035L.431.309l.035.035zM.518.292.502.308.467.273.483.257c.01-.01.026-.01.035 0s.01.026 0 .035"/></svg>    </button>
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
     <p hidden class="question-card_answer">
         The Marauder's Map 
     </p>
@@ -214,18 +224,35 @@
 
 </section>
 <footer class="navigation-bar">
-    <svg width="40" height="40" viewBox="0 0 0.85 0.85" 
+    <a href="index.html"><svg width="40" height="40" viewBox="0 0 0.85 0.85" 
     xmlns="http://www.w3.org/2000/svg" 
-    class="si-glyph si-glyph-castle"><title>181</title><path d="M.8.25H.75V.3H.7V.251L.65.25v.2h-.1V.2A.05.05 0 0 0 .6.151S.428.002.4.002H.399c-.027 0-.2.149-.2.149C.199.178.224.2.251.2v.25H.149V.3S.126.303.1.301V.35H.05V.3H0v.448c0 .028.024.05.052.05H.35V.653C.35.582.402.597.402.597S.454.582.454.653v.145H.75C.778.798.8.774.8.744zM.05.5V.45H.1V.5zm.1.15H.1V.6h.05zm.1 0H.2V.6h.05zm.2-.3H.348V.247H.45zm.15.3H.55V.6H.6zm.1 0H.65V.6H.7zM.75.5H.699V.45H.75z" fill="#434343" class="si-glyph-fill" fill-rule="evenodd"/></svg>
-
-<svg width="35px" height="35px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M1.701 1.206a0.322 0.322 0 0 0 -0.322 -0.321 0.322 0.322 0 0 0 -0.321 0.321 0.322 0.322 0 0 0 0.321 0.322 0.322 0.322 0 0 0 0.322 -0.322" fill="#FF5F00"/>
-  <path d="M1.417 1.703h-0.076a0.539 0.539 0 0 0 -0.539 0.539v0.279H1.956v-0.279a0.539 0.539 0 0 0 -0.539 -0.539" fill="#FF5F00"/>
+    class="si-glyph si-glyph-castle"><title>181</title><path 
+    d="M.8.25H.75V.3H.7V.251L.65.25v.2h-.1V.2A.05.05 0 0 0 .6.151S.428.002.4.002H.399c-.027 0-.2.149-.2.149C.199.178.224.2.251.2v.25H.149V.3S.126.303.1.301V.35H.05V.3H0v.448c0 .028.024.05.052.05H.35V.653C.35.582.402.597.402.597S.454.582.454.653v.145H.75C.778.798.8.774.8.744zM.05.5V.45H.1V.5zm.1.15H.1V.6h.05zm.1 0H.2V.6h.05zm.2-.3H.348V.247H.45zm.15.3H.55V.6H.6zm.1 0H.65V.6H.7zM.75.5H.699V.45H.75z" 
+    fill="white" 
+    class="si-glyph-fill" 
+    fill-rule="evenodd"/>
+</svg></a> 
+<a href="bookmark.html"><svg class="bookmark-icon-footer" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#43270F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+</a>      
+<a href="form.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+</a>
+<a href="profile.html"><svg width="40px" height="40px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.701 1.206a0.322 0.322 0 0 0 -0.322 -0.321 0.322 0.322 0 0 0 -0.321 0.321 0.322 0.322 0 0 0 0.321 0.322 0.322 0.322 0 0 0 0.322 -0.322" fill="white"/>
+  <path d="M1.417 1.703h-0.076a0.539 0.539 0 0 0 -0.539 0.539v0.279H1.956v-0.279a0.539 0.539 0 0 0 -0.539 -0.539" fill="white"/>
   <path d="M2.254 0.245h-1.75a0.262 0.262 0 0 0 -0.262 0.262v1.75a0.262 0.262 0 0 0 0.262 0.262h0.123v-0.279a0.714 0.714 0 0 1 0.432 -0.656 0.494 0.494 0 0 1 -0.177 -0.379 0.497 0.497 0 0 1 0.496 -0.496 0.497 0.497 0 0 1 0.497 0.496 0.494 0.494 0 0 1 -0.177 0.379 0.715 0.715 0 0 1 0.432 0.656v0.279h0.123a0.262 0.262 0 0 0 0.262 -0.262v-1.75a0.262 0.262 0 0 0 -0.262 -0.262" fill="rgba(4,39,48, 0.8)"/>
-</svg>
+</svg></a>   
 
 </footer>
 
     
 </body>
-</html>
+</html>  <h2 class="title-of-the-card">
+        1. Question</h2>
+    <h3 class="question-card_question">
+     What is the name of the school that Harry Potter attends?
+    </h3>
+    <button type="button" class="bookmark" data-js="bookmark">
+<svg class="bookmark-icon" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+    </button>
+    <p hidden class="question-card_answer" data-js="question-card-answer">
+    

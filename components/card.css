@@ -47,13 +47,14 @@
     color: rgba(220,221,216);
     text-align: center;
     font-weight: normal;
-    font-size: 22px;
+    
 }
 .tags {
     display: flex;
     justify-content: flex-start;
     list-style: none;
     padding: 0;
+    font-size: 16px;
     
 }
 .bookmark-icon.active {
@@ -70,11 +71,9 @@
 .bookmark-icon {
     fill: none;
     stroke-width: 2;
-    stroke: #000000;
+    stroke: rgba(220,221,216);
 }
-     .bookmark-icon:hover {
-        stroke: #FFC30B !important;
-    }
+   
     
   
 .bookmark {
@@ -86,3 +85,9 @@
     background: transparent;
     color: #0E1A40;
 }
+.bookmark-icon {
+    fill: none;
+    stroke-width: 2;
+    stroke: rgba(220,221,216);
+}
+   

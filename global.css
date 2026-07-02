@@ -1,16 +1,25 @@
 @font-face {
-    font-family: "HarryP";
-    src: url("./assets/HARRYP__.TTF");
+    font-family: "Lumos";
+    src: url("./assets/LUMOS-fixed.ttf");
+}
+:root {
+    --primary-color: rgba(4,39,48);
+    --secondary-color: rgba(25,71,69);
+    --tertiary-color: rgba(34, 115, 111);
+    --text-color: rgba(220,221,216);
+    font-family: "Lumos", sans-serif;
+
 }
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0px;
-    font-family: "HarryP", sans-serif;
-    color: rgba(220,221,216);
+    font-family: "Lumos", sans-serif;
+    color: var(--text-color);
 }
 .title-of-the-page {
     margin: 10px;
     padding: 10px;
+    color:rgba(220,221,216)
     
     
 }
@@ -23,9 +32,8 @@ header {
     width: 100%;
     background-color: rgba(4,39,48, 0.8);
     z-index: 1;
-    
 }
-.body-dark {
+body-dark {
     background-image: url("./assets/background-image_dark_mode.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;

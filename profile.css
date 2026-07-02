@@ -1,65 +1,194 @@
 @font-face {
-    font-family: "HarryP";
-    src: url("./assets/HARRYP__.TTF");
+    font-family: "Lumos";
+    src: url("./assets/LUMOS-fixed.ttf");
 }
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0px;
-    font-family: "HarryP", sans-serif;
-    color: rgba(220,221,216);
-
-
-.profile {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+:root {
+    --primary-color: rgba(4,39,48);
+    --secondary-color: rgba(25,71,69);
+    --tertiary-color: rgba(34, 115, 111);
+    --text-color: rgba(220,221,216);
+    font-family: "Lumos", sans-serif;
 }
-.aboutMe-Section {
+:root.dark {
+  --primary-color: rgba(31,46,34);      
+    --secondary-color: rgba(58,71,80);    
+    --tertiary-color: rgba(43,31,51);     
+    --text-color: rgba(201,209,203);      
+    --quaternary-color: rgba(74,59,42);   
+    --quinary-color: rgba(10,15,10);
+}
+body.dark {
+    background-image: url("./assets/background-image_dark_mode.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./assets/background-image_normal_mode.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-blend-mode: lighten;
+    background-size: 100% 100%;
+}
+.add-button-container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  
+  justify-content: flex-end;
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
 }
-.darkmode {
-  display: flex;
-  gap: 15;
-  flex-direction: column;
+.add-button {
+  background-color: var(--primary-color);
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
 }
+.add-button-icon{
+    fill: none;
+    stroke-width: 2;
+    
+}
+.profile-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 .profile-card {
-    position: relative;
-    background-color: rgba(4,39,48);
-    border-radius: 3px;
-    width: 400px;
-    padding: 10px;
-    display: grid;
-    opacity: 0.9;
-    gap: 15px;
-    flex-direction: column-reverse;
-    margin: auto;
-    height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  height: 500px;
+  width: 400px;
+  margin: 10px;
+  position: relative;
+  margin: auto;
+  border-radius: 6px;
+  opacity: 0.9;
 }
-.profile-settings {
+.profile {
   display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.profile-picture {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.profile-picture-picture {
+  width: 80px;
+  height: 80px;
 
 }
-.profile-counters-questionmark {
-  align-self: flex-start;
+.about-me-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+.aboutMe-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.about-me-input {
+  background-color: var(--secondary-color);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--text-color);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  width: 90%;
+  text-align: left;
 }
 .profile-counters {
+  position: relative;
+  left: 45px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-left: 5px;
+  padding: 10px;
+  width: 300px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+.profile-counters-container-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
   }
-.aboutMe-Section {
-  padding: 0;
-  margin: 0;
-  border: 2px solid rgba(34, 115, 111, 0.5);
-  background-color: rgba(25,71,69, 0.5);
-  opacity: 0.9;
+  .profile-counters-container-bookmark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  
+  }
+.number-of-questions {
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+}
+.bookmarked-items {
+  padding: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  top: 1px; 
+}
+.bookmark-icon {
+    fill: none;
+    stroke-width: 2;
+    stroke: var(--text-color);
+}
+.bookmark-icon:hover {
+        stroke: #FFC30B !important;
+    }     
+.profile-counters-container-question-icon {
+    fill: none;
+    stroke-width: 2;
+    stroke: var(--text-color);
+}
+.profile-counters-container-question-icon:hover {
+        stroke: #FFC30B !important;
+    }     
+
+.settings-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.darkmode {
+display: flex;
+flex-direction: row;
+gap: 10px;
+justify-content: space-around;
+margin: 25px;
 }
 .switch {
   position: relative;
@@ -73,7 +202,6 @@
   width: 0;
   height: 0;
 }
-
 /* The slider */
 .slider {
   position: absolute;
@@ -82,11 +210,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--text-color);
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -98,81 +225,26 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--secondary-color);
 }
-
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--secondary-color);
 }
-
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
 }
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }
 main {
   width: 400px;
-  margin: 0px;
-  box-sizing:border-box;
+  margin: auto;
+  margin-top: 100px;
 }
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./assets/background-image_normal_mode.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-blend-mode: lighten;
-    background-size: 100% 100%;
-   
-}
-body.dark {
-  display: flex;
-    flex-direction: column;
-    background-image: url("./assets/background-image_dark_mode.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-blend-mode: lighten;
-    background-size: 100% 100%;
-}
-.navigation-bar {
-    box-sizing: border-box;
-    border: 4px lightgray;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 48px;
-    display: flex;
-    align-self: center;
-    justify-content: space-around;
-    background-color: rgba(4,39,48, 0.8);
-    align-items: center;
-    margin: auto;
-    padding-top: 5px;
-    }
-.tag {
-    text-decoration: none;
-    color: black;
-}
-.bookmark-icon-footer {
-    fill: none;
-    stroke-width: 2;
-    stroke: #ffffff;
-}
-.bookmark-icon-footer:hover {
-        stroke: #FFC30B !important;
-    }        

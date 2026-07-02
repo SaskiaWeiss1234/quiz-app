@@ -5,34 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./components/navigation.css">
     <script src="js/profile.js" defer></script>
-    <title>Document</title>
+    <title>Profile Page</title>
 </head>
 <body>
     <header class="profile-page-title" >Profile Page</header>
     <main>
    <section class="profile-card" aria-label="profile-card">
+
+        <button class="add-button" data-js="add-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="add-button-icon"><path d="M8.333 20h23.333"/><path d="M20 8.333v23.333"/></svg>
+        </button>
+        
                 <div class="profile">
                     <div class="profile-picture">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xml:space="preserve" width="40" height="40"><path style="fill:#8a5fc4" d="M40 31.063c0 1.905-8.952 3.492-20 3.492S0 33.032 0 31.063s8.952-.762 20-.762 20-1.143 20 .762"/><path style="fill:#704d96" d="M20 30.302c11.048 0 20-1.143 20 .762s-8.952 3.492-20 3.492"/><path style="fill:#8a5fc4" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175c-1.143-1.143-1.778-1.143-2.921 0l-5.904 21.841c2.286.063 4.762.127 7.365.127"/><path style="fill:#704d96" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175M4 33.159c3.111.698 9.46 1.524 16 1.524s12.317-.635 15.937-1.46z"/><path style="fill:#fcc03a" d="m20 19.508.825 1.714 1.905.254-1.333 1.334.317 1.904L20 23.825l-1.714.889.317-1.904-1.333-1.334 1.905-.254Z"/></svg>
+                        <svg class="profile-picture-picture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" xml:space="preserve" width="40" height="40"><path style="fill:#8a5fc4" d="M40 31.063c0 1.905-8.952 3.492-20 3.492S0 33.032 0 31.063s8.952-.762 20-.762 20-1.143 20 .762"/><path style="fill:#704d96" d="M20 30.302c11.048 0 20-1.143 20 .762s-8.952 3.492-20 3.492"/><path style="fill:#8a5fc4" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175c-1.143-1.143-1.778-1.143-2.921 0l-5.904 21.841c2.286.063 4.762.127 7.365.127"/><path style="fill:#704d96" d="M20 28.143c2.603 0 5.079-.063 7.365-.127L21.46 6.175M4 33.159c3.111.698 9.46 1.524 16 1.524s12.317-.635 15.937-1.46z"/><path style="fill:#fcc03a" d="m20 19.508.825 1.714 1.905.254-1.333 1.334.317 1.904L20 23.825l-1.714.889.317-1.904-1.333-1.334 1.905-.254Z"/></svg>
                         </div>
-                        <h2 class=profile-heading>Max Mustermann</h2>
+                        <h2 class=profile-heading>Saskia Weiss</h2>
                     </div>
                     <div class="aboutMe-Section">
-                        <h3>About Me</h3>
-                        <p>As a Potterhead of the first generation, I could answer every single one of these questions in my sleep. 
+                        <h3 class="about-me-title">About Me</h3>
+                        <p class="about-me-input">As a Potterhead of the first generation, I could answer every single one of these questions in my sleep. 
                     But I won't, as who wants to be an insufferable know-it-all... Can you guess which of the characters represents me best?</p>
                 </div>
          <div class="profile-counters">
-             <span class="profile-counters-container">
-                <img class="profile-counters-questionmark" src="./assets/circle-question-mark.png" alt="answered questions:">
-                <span>
+             <span class="profile-counters-container-question">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" 
+        stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+        class="profile-counters-container-question-icon">
+        <path d="M4.813 10.775a5 5 0 0 1 5.975 -5.962 5 5 0 0 1 8.425 0 5 5 0 0 1 5.975 5.975 5 5 0 0 1 0 8.425 5 5 0 0 1 -5.962 5.975 5 5 0 0 1 -8.438 0 5 5 0 0 1 -5.975 -5.962 5 5 0 0 1 0 -8.45"/>
+        <path d="M11.363 11.25a3.75 3.75 0 0 1 7.287 1.25c0 2.5 -3.75 3.75 -3.75 3.75"/>
+        <path x1="12" x2="12.01" y1="17" y2="17" d="M15 21.25L15.012 21.25"/></svg>
+                <span class="number-of-questions">
                     10
                 </span>
     </span>
-        <span class="profile-counters-container">
-            <img class="profile-counters-image-wand" src="./assets/wand-sparkles.png" alt="bookmarked questions">
-            <span>
+        <span class="profile-counters-container-bookmark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 30 30" 
+        fill="none" stroke="rgba(220,221,216)" stroke-width="2" stroke-linecap="round" 
+        stroke-linejoin="round" class="bookmark-icon">
+        <path d="m27.05 4.55 -1.6 -1.6a1.512 1.512 0 0 0 -2.15 0L2.95 23.3a1.512 1.512 0 0 0 0 2.15l1.6 1.6a1.5 1.5 0 0 0 2.15 0L27.05 6.7a1.5 1.5 0 0 0 0 -2.15"/>
+        <path d="m17.5 8.75 3.75 3.75"/><path d="M6.25 7.5v5"/><path d="M23.75 17.5v5"/><path d="M12.5 2.5v2.5"/><path d="M8.75 10H3.75"/><path d="M26.25 20h-5"/>
+        <path d="M13.75 3.75H11.25"/></svg>
+            <span class="bookmarked-items">
                 3
             </span>
         </span>
@@ -40,7 +56,7 @@
   
     <section class="Settings-Container">
         <div class="profile-settings">
-            <h3>Settings</h3>
+            <h3 class="settings-title">Settings</h3>
             <div class="darkmode">
                 <h4 class="dark-mode-label">Dark Mode</h4>
 
@@ -88,20 +104,27 @@
       <footer class="navigation-bar">
     <a href="index.html"><svg width="40" height="40" viewBox="0 0 0.85 0.85" 
     xmlns="http://www.w3.org/2000/svg" 
-    class="si-glyph si-glyph-castle"><title>181</title><path 
+    class="home-icon-footer"><title>181</title><path 
     d="M.8.25H.75V.3H.7V.251L.65.25v.2h-.1V.2A.05.05 0 0 0 .6.151S.428.002.4.002H.399c-.027 0-.2.149-.2.149C.199.178.224.2.251.2v.25H.149V.3S.126.303.1.301V.35H.05V.3H0v.448c0 .028.024.05.052.05H.35V.653C.35.582.402.597.402.597S.454.582.454.653v.145H.75C.778.798.8.774.8.744zM.05.5V.45H.1V.5zm.1.15H.1V.6h.05zm.1 0H.2V.6h.05zm.2-.3H.348V.247H.45zm.15.3H.55V.6H.6zm.1 0H.65V.6H.7zM.75.5H.699V.45H.75z" 
     fill="white" 
     class="si-glyph-fill" 
     fill-rule="evenodd"/>
 </svg></a> 
-<a href="bookmark.html"><svg class="bookmark-icon-footer" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#43270F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wandSparkling"><path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/><path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/><path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
+<a href="bookmark.html"><svg class="bookmark-icon-footer" data-js="bookmark-icon" xmlns="http://www.w3.org/2000/svg" width="40" 
+    height="40" viewBox="0 0 40 40" fill="none" stroke="#43270F" stroke-width="2" stroke-linecap="round" 
+    stroke-linejoin="round" class="wandSparkling">
+    <path d="m36.067 6.067 -2.133 -2.133a2.017 2.017 0 0 0 -2.867 0L3.933 31.067a2.017 2.017 0 0 0 0 2.867l2.133 2.133a2 2 0 0 0 2.867 0L36.067 8.933a2 2 0 0 0 0 -2.867"/>
+    <path d="m23.333 11.667 5 5"/><path d="M8.333 10v6.667"/><path d="M31.667 23.333v6.667"/><path d="M16.667 3.333v3.333"/>
+    <path d="M11.667 13.333H5"/><path d="M35 26.667h-6.667"/><path d="M18.333 5H15"/></svg>
 </a>      
-<a href="form.html"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+<a href="form.html"><svg class="add-icon-footer" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus">
+    <circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
 </a>
-<a href="profile.html"><svg width="40px" height="40px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<a href="profile.html"><svg class="profile-icon-footer" width="40px" height="40px" viewBox="0 0 2.8 2.8" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M1.701 1.206a0.322 0.322 0 0 0 -0.322 -0.321 0.322 0.322 0 0 0 -0.321 0.321 0.322 0.322 0 0 0 0.321 0.322 0.322 0.322 0 0 0 0.322 -0.322" fill="white"/>
   <path d="M1.417 1.703h-0.076a0.539 0.539 0 0 0 -0.539 0.539v0.279H1.956v-0.279a0.539 0.539 0 0 0 -0.539 -0.539" fill="white"/>
-  <path d="M2.254 0.245h-1.75a0.262 0.262 0 0 0 -0.262 0.262v1.75a0.262 0.262 0 0 0 0.262 0.262h0.123v-0.279a0.714 0.714 0 0 1 0.432 -0.656 0.494 0.494 0 0 1 -0.177 -0.379 0.497 0.497 0 0 1 0.496 -0.496 0.497 0.497 0 0 1 0.497 0.496 0.494 0.494 0 0 1 -0.177 0.379 0.715 0.715 0 0 1 0.432 0.656v0.279h0.123a0.262 0.262 0 0 0 0.262 -0.262v-1.75a0.262 0.262 0 0 0 -0.262 -0.262" fill="rgba(4,39,48, 0.8)"/>
+  <path d="M2.254 0.245h-1.75a0.262 0.262 0 0 0 -0.262 0.262v1.75a0.262 0.262 0 0 0 0.262 0.262h0.123v-0.279a0.714 0.714 0 0 1 0.432 -0.656 0.494 0.494 0 0 1 -0.177 -0.379 0.497 0.497 0 0 1 0.496 -0.496 0.497 0.497 0 0 1 0.497 0.496 0.494 0.494 0 0 1 -0.177 0.379 0.715 0.715 0 0 1 0.432 0.656v0.279h0.123a0.262 0.262 0 0 0 0.262 -0.262v-1.75a0.262 0.262 0 0 0 -0.262 -0.262" 
+  fill="rgba(4,39,48, 0.1)"/>
 </svg></a>   
 
 </footer>     

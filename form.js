@@ -4,10 +4,12 @@ const remainingCharsNumberAnswer = document.querySelector('[data-js="remaining-C
 const yourQuestion = document.querySelector('[data-js="yourQuestion"]');
 const yourAnswer = document.querySelector('[data-js="yourAnswer"]');
 const form = document.querySelector('[data-js="Question-Card-Submit"]');
-
+const tag = document.querySelector('[data-js="tag"]');
+const ShowAnswer = document.querySelector('[data-js="Show-Answer"]');
+let questionCards = JSON.parse(localStorage.getItem("questionCards")) || [];
 // Submit the event and add a new Question card
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
+function renderNewQuestionCard(yourQuestion, yourAnswer, tag) {
+  
 
   // create elements
   const card = document.createElement("div");
@@ -65,9 +67,9 @@ form.addEventListener("submit", (event) => {
   tag1.setAttribute("href", "#");
   tag2.setAttribute("href", "#");
   tag3.setAttribute("href", "#");
-  tag1.textContent = yourQuestion.value;
-  tag2.textContent = "Harry Potter";
-  tag3.textContent = "Fiction";
+  tag1.textContent = tag.value;
+  tag2.textContent = tag.value;
+  tag3.textContent = tag.value;
 
   // set card content
   card.classList.add("question-card");
@@ -89,10 +91,26 @@ form.addEventListener("submit", (event) => {
   tags.append(tag1, tag2, tag3);
   card.append(title, question, bookmark, answer, showAnswerButton, tags);
   document.querySelector('[data-js="question-cards"]').append(card);
+}
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  renderNewQuestionCard(yourQuestion, yourAnswer, tag);
+  questionCards.push({
+    question: yourQuestion.value,
+    answer: yourAnswer.value,
+    tag: tag.value
+  });
+  localStorage.setItem("questionCards", JSON.stringify(questionCards));
 
   form.reset();
 });
-
+questionCards.forEach((data) => {
+  renderNewQuestionCard(
+    { value: data.question },
+    { value: data.answer },
+    { value: data.tag }
+  );
+});
 yourQuestion.addEventListener("input", () => {
     const yourQuestionLength = yourQuestion.value.length;
     const remainingChar = 150 - yourQuestionLength;
@@ -106,8 +124,8 @@ yourAnswer.addEventListener("input", () => {
 ShowAnswer.addEventListener("click",() => {
 questionCardAnswer.toggleAttribute('hidden');
 if (questionCardAnswer.hasAttribute('hidden')) {
-    showAnswer.textContent = "Show Answer";}
-    else {showAnswer.textContent = "Hide Answer"}
+    ShowAnswer.textContent = "Show Answer";}
+    else {ShowAnswer.textContent = "Hide Answer"}
 });
 
 
